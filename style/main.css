@@ -17,7 +17,7 @@ body
 	background-position: top left;
 }
 
-h1, h2
+h1, h2, h3, h4, h5
 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: normal;
@@ -27,6 +27,9 @@ h1, h2
 
 h1 { text-align: center; font-size: 3em; color: white;}
 h2 { font-size: 1.5em; color: #008cc8;}
+h3 { font-size: 1.25em; color: black; margin-bottom: .1em;}
+h4 { font-size: 1.12em; font-weight: bold; color: black; margin-bottom: .1em;}
+h5 { font-size: 1em; font-weight: bold; color: gray; margin-bottom: .1em;}
 
 p 
 {
@@ -34,6 +37,12 @@ p
 	color: black;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 1em;
+}
+
+ul
+{
+	margin-top: 0;
 	margin-bottom: 1em;
 }
 
@@ -212,11 +221,76 @@ p
 
 .white_bg
 {
+	position: relative;
 	background-color: rgba(255,255,255,.9);
 	padding: .5em;
 	border-color: #008cc8;
 	border-style: solid;
 	border-width: 2px;
+}
+
+div.whitefade
+{
+	width: 105%;
+	height: 10em;
+	background: none;
+	position: absolute;
+	top: 3em;
+	left: -2.5%;
+    background: -webkit-linear-gradient(rgba(255,255,255,255), rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,255), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,255), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,255), rgba(255,255,255,0)); /* Standard syntax */
+	z-index: -1;
+}
+
+div.img_scroll
+{
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+div.port_entry
+{
+	width: 95%;
+	margin: 0 auto 2.5em auto;
+	position: relative;
+}
+
+div.port_entry img
+{
+	display: inline;
+	margin: 0 .5em .5em 0;
+	max-width: 10em;
+	max-height: 70vh;
+}
+
+div.port_entry img.top_img
+{
+	max-width: none;
+	max-height: none;
+	width: 60%;
+	margin: 1em auto 0 auto;
+	box-shadow: -.2em .2em .5em rgba(0,0,0,.5);	
+	display: block;
+}
+
+div.expander
+{
+	overflow: hidden;
+	transition: all 1s ease-in-out;
+}
+
+div.lessinfo
+{
+	max-height: 0;
+}
+
+div.moreinfo
+{
+	max-height: 10000px;
 }
 
 /* Footer */

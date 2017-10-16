@@ -33,7 +33,7 @@
 			else if($video == 3)
 				echo "<source src='media/Folio.mp4' type='video/mp4'/>";
 			else if($video == 4)
-				echo "<source src='media/Mouse.mp4' type='video/mp4'/>";
+				echo "<source src='media/Coffee.mp4' type='video/mp4'/>";
 			else if($video == 5)
 				echo "<source src='media/Pen.mp4' type='video/mp4'/>";
 			else if($video == 6)
@@ -55,7 +55,6 @@
 				<h1>About Jake</h1>
 				<div id='introduction_menu' class='submenu'>
 					<a href='#personal_intro'>Introduction</a>
-					<a href='#tools'>Design</a>
 					<a href='#resume'>R&eacute;sum&eacute;</a>
 				</div>
 				<div class='white_bg' id='personal_intro'>
@@ -63,19 +62,59 @@
 					<img src='media/j&m.png' class='left_img'/>
 					<p>I'm a hobbyist web designer living in Illinois with my wife, Mary, and our three dogs, Max, Lucky, and Sadie. We lead pretty busy lives, so we mostly enjoy any opportunity we can get to just stay home and watch a movie, write strange stories, or play board games. A lot of our weekends are spent on our snail's-pace home renovation. A chunk of my weekend is also typically dedicated to web projects as well, whether that be tweaking the layout and design of a site, learning new JavaScript and CSS tricks, or fiddling with database code.</p>
 					<img src='media/dogs.png' class='right_img'/>
-					<p>Web design has provided me the opportunity to combine the activities I have enjoyed since childhood, from art to coding to writing. It has become something I really enjoy getting lost in--practical puzzles not just to be set aside when solved, but that always make me just a little better of a coder and a little more skillful of a designer; a little more efficient and a little more adventurous. I have discovered a passion for developing engaging, responsive, and accessible designs and interfaces, and for writing code that is useful, adaptable, and efficient.</p>
-					<p>Web design isn't my day job (though I hope to soon make a career of it). I graduated from Knox College in 2010 with a double-major in Creative Writing and Secondary Educational Studies, and my experiences since then have mostly orbited higher education. Currently, I am Coordinator of Academic Support Services at Carl Sandburg College, where I manage the Tutoring Center and coordinate disability support services.</p>
-					<p>I would love to talk with you more about my work. Please feel free to <a>contact me</a> to start a conversation. You should also check out my <a>portfolio</a>, which features examples of my site designs, code snippets in PHP and JavaScript, and graphic projects.</p>
+					<p>Web design has provided me the opportunity to combine the activities I have enjoyed since childhood, from art to coding to writing. It has become something I love getting lost in--practical puzzles not just to be set aside when solved, but that always make me just a little better of a coder and a little more skillful of a designer; a little more efficient and a little more adventurous. I have discovered a passion for developing engaging, responsive, and accessible designs and interfaces, and for writing code that is useful, adaptable, and efficient.</p>
+					<p>Web design isn't my day job (though I hope to make a career of it). I graduated from Knox College in 2010 with a double-major in Creative Writing and Secondary Educational Studies, and my experiences since then have mostly orbited higher education. Currently, I coordinate disability support services and the tutoring program at Carl Sandburg College.</p>
+					<p>I would appreciate the opportunity to talk with you more about my work. Please feel free to <a>contact me</a> to start a conversation. You should also check out my portfolio, which features examples of my site designs, code snippets in PHP and JavaScript, and various graphic projects.</p>
 
 				</div>
-				<div class='white_bg' id='tools'>
-					<h2>Design</h2>
-					<h3>Goals</h3>
-					<h3>Tools</h3>
-				</div>
+
 				<div class='white_bg' id='resume'>
 					<h2>R&eacute;sum&eacute;</h2>
-					<?php for($i=0; $i<100; $i++) echo "<br/>"; ?>
+					<h3>Web Design Experience</h3>
+					<h4>Languages and Tools</h4>
+					<ul>
+						<li>HTML5 and CSS3</li>
+						<li>Client-side: JavaScript (with JQuery and Velocity.js) and AJAX</li>
+						<li>Server-side: PHP 7 (PDO for SQL prepared statements); MySQL (and phpMyAdmin) for database management</li>
+						<li>Composition in Notepad++, testing with Bitnami Wampstack (with Apache web server)</li>
+						<li>Content management experience with CPanel, FileZilla FTP</li>
+						<li>Graphics: GIMP and Inkscape (image editing); DaVinci Resolve (video editing)</li>
+					</ul>
+					
+					<h4>Work Experience</h4>
+					<h5>Coordinator of Academic Support Services</h5>
+					<i>Carl Sandburg College, Galesburg, IL - December 2013 – present</i>
+					<ul>
+						<li>Ensured institutional compliance to ADA specifications for academic accessibility to students with disabilities, including the accessibility of online and electronic course content</li>
+						<li>Evaluated and implemented accommodations for fair and equal academic access to students with disabilities by approving, implementing, and enforcing classroom disability accommodations</li>
+						<li>Streamlined disability support processes by automating forms and intake systems</li>
+						<li>Maintained currency and accessibility for various assistive technologies, including text-to-speech and voice-to-text applications, magnification devices, and technology loans</li>
+						<li>Updated, configured, and maintained inventory on a laptop loan program of over 50 laptops</li>
+						<li>Coordinated drop-in, arranged, and online tutoring in general, computer, and healthcare education</li>
+						<li>Grew the college tutoring program, managing a staff of over 20 tutors and expanding our tutorial services into subject areas including accounting, radiologic technology, and dental hygiene</li>
+						<li>Developed a tutor training regimen for College Reading and Learning Association (CRLA) certification</li>
+						<li>Tracked and used data on disability support, tutoring, and equipment loans to make informed decisions on program policies and spending habits</li>
+						<li>Collaborated on institutional compliance for a large, renewable grant</li>
+						<li>Contributed to campus safety evaluation and policy as part of the Risk Management Committee</li>
+						<li>Developed dynamic working relationships with all campus departments</li>
+					</ul>
+					<h5>Adjunct Instructor and Teaching Assistant, Composition</h5>
+					<p>
+						<i>Adjunct: Carl Sandburg College, Galesburg, IL - August 2011 – December 2013</i><br/>
+						<i>TA: Western Illinois University, Macomb, IL	- August 2012 – December 2013</i><br/>
+					</p>
+					<h5>Peer and Professional Tutor / Writing Center Consultant</h5>
+					<p>
+						<i>Western Illinois University, Macomb, IL - August 2012 – May 2013</i><br/>
+						<i>Carl Sandburg College, Galesburg, IL	January 2009 – January 2013</i><br/>
+						<i>Knox College, Galesburg, IL	September 2007 – June 2010</i>
+					</p>
+					<h4>Education</h4>
+					Associate in Applied Science, IT LAN and Security Specialist<br/>
+					<i>Carl Sandburg College, Galesburg, IL—July 2017</i><br/><br/>
+					Bachelor of Arts in Creative Writing and Educational Studies<br/>
+					<i>Knox College, Galesburg, IL—June 2010</i>
+
 				</div>
 			</div>
 		</div>
@@ -85,11 +124,136 @@
 				<div id='portfolio_menu' class='submenu'>
 					<a href='#full_pages'>Webpages</a>
 					<a href='#code'>Code</a>
-					<a href='#graphics'>Graphic Art</a>
+					<a href='#graphics'>Graphics</a>
 				</div>
-				<div class='white_bg' id='full_pages'><p>YAY</p></div>
+				<div class='white_bg' id='full_pages'>
+					<div class='port_entry'>
+					<div class='whitefade'></div>
+						<img class='top_img' src='portfolio/websites/portfolio.png'/>
+						<h2>Portfolio Site</h2>
+						<p>This portfolio site emphasizes Velocity.js- and CSS3-based transitions, keeping server-side complexity to a minimum. Aside from the images and videos, the entirety of the site is structured from a single PHP file (index.php) and a single CSS stylesheet.</p>
+						<div class='expander lessinfo'>
+							<h3>Features</h3>
+							<ul>
+								<li>Single-page design</li>
+								<li>Dynamic content display based on URL hash</li>
+								<li>JavaScript History API used to define browser back/forward button behavior</li>
+								<li>One of five random video backgrounds loaded on the splash screen</li>
+							</ul>
+						</div>
+						<a class='moreinfo_button'>+ More info +</a>
+					</div>
+					
+					<div class='port_entry'>
+					<div class='whitefade'></div>
+						<img class='top_img' src='portfolio/websites/FUMC.png'/>
+						<h2>First United Methodist Church</h2>
+						<p><a href='http://www.firstumcgalesburg.org' target='_blank'>View live site</a> (may contain client alterations)<br/>
+							<a href='' target='_blank'>View preserved site</a></p>
+						<p>The First United Methodist page design philosophy was to create a "digital poster. This stands in contrast to the previous page design (shown below), which offered a more traditional webpage structure and regular news and events updates. This current iteration eschews excessive information, instead focusing on prominently advertising the church's location and methods to contact the church and highlighting the church's mission statement.</p>
+						<div class='expander lessinfo'>
+							<p>Structurally, from the user perspective, the page consists of three PHP pages: an index, a content page (which dynamically loads content for various subpages from a SQL database), and a staff directory page. The content and staff directory pages also include PHP files containing functions for interfacing with database and displaying page content. Additional PHP files allow users to create accounts and log in, making up a custom content management system (demo featured below) that allows church staff to modify subpage content without altering the page structure.</p>
+						</div>
+						<a class='moreinfo_button'>+ More info +</a>
+					</div>
+					
+					<div class='port_entry'>
+					<div class='whitefade'></div>
+						<img class='top_img' src='portfolio/websites/cms.png'/>
+						<h2>Content Management Demo</h2>
+						<p><a href='' target='_blank'>View demo</a></p>
+						<p>The custom CMS for the First Methodist webpage includes a PHP-based user account request and approval process, secure login with password hashing and salting, administrative task and page editing permissions that can be set per user, rich text page editing, and image management.</p>
+						<div class='expander lessinfo'>
+							<p>This demo removes account creation and approval features, instead creating a random account tied to the user's session. Changes made via the CMS, while they do operate on a real database, are visible only to the user that made them, and the changes they make are erased after their session ends.</p>
+						</div>
+						<a class='moreinfo_button'>+ More info +</a>
+					</div>
+					
+					<div class='port_entry'>
+					<div class='whitefade'></div>
+						<img class='top_img' src='portfolio/websites/cms.png'/>
+						<h2>Sample Designs</h2>
+						<p>Various sample designs with placeholder content.</p>
+					</div>
+					
+					<div class='port_entry'>
+					<div class='whitefade'></div>
+						<img class='top_img' src='portfolio/websites/FUMC_old.png'/>
+						<h2>First United Methodist Church (2013-2016)</h2>
+						<p><a href='https://web.archive.org/web/20141217110954/http://firstumcgalesburg.org/' target='_blank'>View archived site</a></p>
+						<p>First United Methodist's webpage was my first major webpage design project, started in 2013. In order to wrap my mind around the code already in place on the website, my goal was not to redesign, but to replicate what the original designer had created, and to build on it from there. The result was a page that had a similar appearance to the original designer's (archived <a href='https://web.archive.org/web/20110706181819/http://firstumcgalesburg.org' target='_blank'>here</a>), but that was built from scratch. Nearly all graphics were recreated (including the header image), and all code is original.</p>
+					</div>
+				</div>
 				<div class='white_bg' id='code'><p>YAY</p><p>YAY</p></div>
-				<div class='white_bg' id='graphics'></div>
+				<div class='white_bg' id='graphics'>
+					<div class='port_entry'>
+						<h2>Carl Sandburg College promotions</h2>
+						<p>A series of parody advertisements for the Carl Sandburg College Tutoring Center, sized at 22"x28", featuring tutors in classic posters and pop culture advertisements; and images related to Tutoring Center and Disability Support brochrues.</p>
+						<p>View the <a href='portfolio/graphics/TC_images/TC_brochure.pdf' target='_blank'> Tutoring Center</a> and <a href='portfolio/graphics/TC_images/DS_brochure.pdf' target='_blank'>Disability Support</a> brochures here.</p>
+						
+						<div class='img_scroll'>
+							<img src='portfolio/graphics/TC_images/Missy2.png' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/Mark2.png' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/Mark_BigBang2.png' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/Mark_tutoring.png' class='enlargeable'/>
+						</div>
+		
+						<div class='expander lessinfo'>
+							<h3>Originals:</h3>
+							<p>Original images were taken by a Tutoring Center staff member against a solid-colored wall. Images of Mark Beckham and Missy Paris used with their permission.</p>
+							<p>The image of Mark Beckham tutoring was altered to both remove the background (to make the image more versatile and remove distracting background activity) and to eliminate extraneous items in the foreground. For example, the pink bag was removed, requiring me to paint Mark's hand  and portions of the table and papers back into the scene.</p>
+							<div class='img_scroll'>
+								<img src='portfolio/graphics/TC_images/Missy.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/TC_images/MARKK.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/TC_images/Mark-Sheldon.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/TC_images/IMG_8236.jpg' class='enlargeable'/>
+							</div>
+
+							<h3>Reference Images:</h3>
+							<p>Reference images were incorporated to varying degrees into the final posters. For the Rosie the Riveter poster, I took the full background image of the original and filled in gaps where necessary; the Uncle Sam poster incorporated some of the original text art; the <i>Big Bang Theory</i> poster background was replicated from scratch, with no actual elements taken directly from the original.</p>							
+							<div class='img_scroll'>
+								<img src='portfolio/graphics/TC_images/rosie-the-riveter-poster-s.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/TC_images/poster.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/TC_images/bbt.jpg' class='enlargeable'/>
+							</div>
+						</div>
+						<a class='moreinfo_button'>+ More info +</a>
+					</div>
+					
+					<div class='port_entry'>
+						<h2>Methodist Church promotions</h2>
+						<p>Posters created between 2013 and 2015. Text design and layout are mine; photos and images are not.</p>
+						<p>View the <a href='portfolio/graphics/CC_Brochure/ccBrochure.pdf' target='_blank'> Crisis Care brochure here</a>.</p>
+						
+						<div class='img_scroll'>
+							<img src='portfolio/graphics/FUMC_Posters/Breakfast1.jpg' class='enlargeable'/><img src='portfolio/graphics/FUMC_Posters/GreenPotluck.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Posters/HealthyEating.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Posters/IceCreamFun.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Movies/DayAfterTomorrow.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Movies/FlyAway.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Movies/MarchDinnerDelight.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Movies/MightyJoeYoung.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Movies/PrincessDiariesPoster.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Movies/SwingVote.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Movies/TheVillage.jpg' class='enlargeable'/>
+						</div>
+						
+					</div>
+					
+					<div class='port_entry'>
+						<h2>Various Logos/Text Designs</h2>
+						
+						<div class='img_scroll'>
+							<img src='portfolio/graphics/TC_images/DS.png' class='enlargeable'/><img src='portfolio/graphics/TC_images/TC_Logo_Large.png' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/TC_Logo_Large_Vert.png' class='enlargeable'/>
+							<img src='portfolio/graphics/Logos/umcg_logo2.png' class='enlargeable'/>
+							<img src='portfolio/graphics/Logos/umcg_logo_mobile2.png' class='enlargeable'/>
+							<img src='portfolio/graphics/Logos/CrisisCareLogo.jpg' class='enlargeable'/>
+						</div>
+						
+					</div>
+					
+				</div>
 			</div>
 		</div>
 		<div id='contact' class='main_screen'>
@@ -117,7 +281,7 @@
 	
 	//Set up switch menus
 	var header_menu = new SwitchMenu('#nav_bar', ['#splash_screen', '#introduction', '#portfolio', '#contact'], {scrollTarget: 'body', startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
-	var intro_menu = new SwitchMenu('#introduction_menu', ['#personal_intro', '#tools', '#resume'], {scrollTarget: 'screen', startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
+	var intro_menu = new SwitchMenu('#introduction_menu', ['#personal_intro', '#resume'], {scrollTarget: 'screen', startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
 	var portfolio_menu = new SwitchMenu('#portfolio_menu', ['#full_pages', '#code', '#graphics'], {scrollTarget: 'screen', startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
 	
 	$(window).on('resize', function(){
@@ -209,6 +373,43 @@
 		if(!nav_bar.hasClass('enlarged')) nav_bar.addClass('enlarged');
 
 	});
+	
+	function bind_events()
+	{
+		$('a.moreinfo_button').off('click').on('click', function(e)
+		{
+			e.preventDefault();
+			e.stopPropagation();
+			
+			var button = $(this);
+			var expander = $(this).prev('div.expander');
+			
+			expander.removeClass('lessinfo').addClass('moreinfo');
+			button.removeClass('moreinfo_button').addClass('lessinfo_button').html('- Less info -');
+			
+			expander.velocity('scroll', {delay: 1000, duration: 500, easing: 'ease-in-out', offset: -100});
+						
+			bind_events();
+		});
+		
+		$('a.lessinfo_button').off('click').on('click', function(e)
+		{
+			e.preventDefault();
+			e.stopPropagation();
+			
+			var button = $(this);
+			var expander = $(this).prev('div.expander');
+			
+			expander.removeClass('moreinfo').addClass('lessinfo');
+			button.removeClass('lessinfo_button').addClass('moreinfo_button').html('+ More info +');
+			
+			expander.velocity('scroll', {delay: 1000, duration: 500, easing: 'ease-in-out', offset: -100});
+						
+			bind_events();
+		});
+	}
+	
+	bind_events();
 	
 	$(document).ready(function()
 	{
