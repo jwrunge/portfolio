@@ -184,12 +184,35 @@
 						<p>First United Methodist's webpage was my first major webpage design project, started in 2013. In order to wrap my mind around the code already in place on the website, my goal was not to redesign, but to replicate what the original designer had created, and to build on it from there. The result was a page that had a similar appearance to the original designer's (archived <a href='https://web.archive.org/web/20110706181819/http://firstumcgalesburg.org' target='_blank'>here</a>), but that was built from scratch. Nearly all graphics were recreated (including the header image), and all code is original.</p>
 					</div>
 				</div>
-				<div class='white_bg' id='code'><p>YAY</p><p>YAY</p></div>
+				<div class='white_bg' id='code'>
+				
+				<div class='port_entry'>
+					<h2>Code</h2>
+					<p>Most all code for the websites I have created is available online at <a href='https://github.com/jwrunge' target='_blank'>my GitHub page</a>. Stand-alone code (such as JQuery or Velocity plugins) is demoed below.</p>
+				</div>
+				
+					<div class='port_entry'>
+						<h2>Screen Switch</h2>
+						<p>Using Velocity.js or JQuery animations. Allows dynamic switching of menu screens tied to submenu links. Full code and documentation available <a href='https://github.com/jwrunge/switchmenu' target='_blank'>on GitHub</a>.</p>
+						<script async src="//jsfiddle.net/jwrunge/4661n2qf/embed/result,js,html/"></script>
+					</div>
+					
+					<div class='port_entry'>
+						<h2>SVG Animator</h2>
+						<p>Auto animates SVG images with options for fine-grain control. Good for <a href='https://jsfiddle.net/jwrunge/bqrykL52/' target='_blank'>animating signatures</a>. Full code and documentation <a href='https://github.com/jwrunge/SVG-Path-Animator' target='_blank'>on GitHub</a>.</p>
+						<script async src="//jsfiddle.net/jwrunge/agywh09x/embed/result,js,html/"></script>
+					</div>
+					
+					<div class='port_entry'>
+						<h2>Form Validator</h2>
+						<p>Front- and back-end form validation. Full code and documentation <a href='https://github.com/jwrunge/Form-Validation' target='_blank'>on GitHub</a>.</p>
+					</div>
+				</div>
 				<div class='white_bg' id='graphics'>
 					<div class='port_entry'>
 						<h2>Carl Sandburg College promotions</h2>
-						<p>A series of parody advertisements for the Carl Sandburg College Tutoring Center, sized at 22"x28", featuring tutors in classic posters and pop culture advertisements; and images related to Tutoring Center and Disability Support brochrues.</p>
-						<p>View the <a href='portfolio/graphics/TC_images/TC_brochure.pdf' target='_blank'> Tutoring Center</a> and <a href='portfolio/graphics/TC_images/DS_brochure.pdf' target='_blank'>Disability Support</a> brochures here.</p>
+						<p>A series of parody advertisements for the Carl Sandburg College Tutoring Center, sized at 22"x28", featuring tutors in classic posters and pop culture advertisements; and images related to Tutoring Center and Disability Support brochures.</p>
+						<p>View the <a href='portfolio/graphics/TC_images/TC_brochure.pdf' target='_blank'> Tutoring Center</a> and <a href='portfolio/graphics/TC_images/DS_brochure.pdf' target='_blank'>Disability Support</a> brochures.</p>
 						
 						<div class='img_scroll'>
 							<img src='portfolio/graphics/TC_images/Missy2.png' class='enlargeable'/>
@@ -221,14 +244,43 @@
 					</div>
 					
 					<div class='port_entry'>
-						<h2>Methodist Church promotions</h2>
-						<p>Posters created between 2013 and 2015. Text design and layout are mine; photos and images are not.</p>
-						<p>View the <a href='portfolio/graphics/CC_Brochure/ccBrochure.pdf' target='_blank'> Crisis Care brochure here</a>.</p>
+						<h2>Methodist Church "Just Us League"</h2>
+						<p>"Just Us League" sermon series advertisement created 2017. View "Just Us League" promo cards <a href='portfolio/graphics/JLCards/cards.pdf' target='_blank'>here</a>.</p>
 						
 						<div class='img_scroll'>
-							<img src='portfolio/graphics/FUMC_Posters/Breakfast1.jpg' class='enlargeable'/><img src='portfolio/graphics/FUMC_Posters/GreenPotluck.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/JLCards/just_us_league_logo.png' class='enlargeable'/>
+							<img src='portfolio/graphics/JLCards/just_us_league_logo_black.png' class='enlargeable'/>
+							<img src='portfolio/graphics/JLCards/just_us_league_logo_hori.png' class='enlargeable'/>
+							<img src='portfolio/graphics/JLCards/just_us_league_logo_hori_black.png' class='enlargeable'/>
+						</div>
+						
+						<div class='expander lessinfo'>
+							<h3>Reference Image:</h3>
+							<p>The original "Justice League" logo, used as inspiration.</p>
+							<img src='portfolio/graphics/JLCards/justice-league-logo.jpg' class='enlargeable'/>
+						</div>
+						<a class='moreinfo_button'>+ More info +</a>
+						
+					</div>
+					
+					<div class='port_entry'>
+						<h2>Methodist Church promotions</h2>
+						<p>Posters created between 2013 and 2015. Text design and layout are mine; photos and images are not.</p>
+						<p>View the Crisis Care brochure <a href='portfolio/graphics/CC_Brochure/ccBrochure.pdf' target='_blank'>here</a>
+						
+						<div class='img_scroll'>
+							<img src='portfolio/graphics/FUMC_Posters/Breakfast1.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/FUMC_Posters/GreenPotluck.jpg' class='enlargeable'/>
 							<img src='portfolio/graphics/FUMC_Posters/HealthyEating.jpg' class='enlargeable'/>
 							<img src='portfolio/graphics/FUMC_Posters/IceCreamFun.jpg' class='enlargeable'/>
+						</div>
+					</div>
+					
+					<div class='port_entry'>
+						<h2>Methodist Church movie ads</h2>
+						<p>Posters created between 2013 and 2015 for Blockbuster Bible Study.</p>
+						
+						<div class='img_scroll'>
 							<img src='portfolio/graphics/FUMC_Movies/DayAfterTomorrow.jpg' class='enlargeable'/>
 							<img src='portfolio/graphics/FUMC_Movies/FlyAway.jpg' class='enlargeable'/>
 							<img src='portfolio/graphics/FUMC_Movies/MarchDinnerDelight.jpg' class='enlargeable'/>
@@ -237,7 +289,6 @@
 							<img src='portfolio/graphics/FUMC_Movies/SwingVote.jpg' class='enlargeable'/>
 							<img src='portfolio/graphics/FUMC_Movies/TheVillage.jpg' class='enlargeable'/>
 						</div>
-						
 					</div>
 					
 					<div class='port_entry'>
@@ -258,7 +309,15 @@
 		</div>
 		<div id='contact' class='main_screen'>
 			<div class='pad'>
-				
+				<h1>Contact Me</h1>
+				<div class='submenu'></div>
+				<div class='white_bg' id='personal_intro'>
+					<h2>Need to get in touch?</h2>
+					<p>Feel free to email me at <a href='mailto:jwrunge@gmail.com'>jwrunge@gmail.com</a>.</p>
+					<h2>Want to see more?</h2>
+					<p>To see the code for most of my projects, check out <a href='https://github.com/jwrunge' target='_blank'>my GitHub page</a>.</p>
+					<p>Check out my JavaScript demos on <a href='https://jsfiddle.net/user/jwrunge/fiddles/' target='_blank'>my JSFiddle page</a>.</p>
+				</div>
 				
 			</div>
 		</div>
@@ -384,10 +443,11 @@
 			var button = $(this);
 			var expander = $(this).prev('div.expander');
 			
-			expander.removeClass('lessinfo').addClass('moreinfo');
+			//expander.removeClass('lessinfo').addClass('moreinfo');
+			expander.css('maxHeight', expander[0].scrollHeight + 'px');
 			button.removeClass('moreinfo_button').addClass('lessinfo_button').html('- Less info -');
 			
-			expander.velocity('scroll', {delay: 1000, duration: 500, easing: 'ease-in-out', offset: -100});
+			expander.velocity('scroll', {delay: 500, duration: 500, easing: 'ease-in-out', offset: -100});
 						
 			bind_events();
 		});
@@ -400,10 +460,10 @@
 			var button = $(this);
 			var expander = $(this).prev('div.expander');
 			
-			expander.removeClass('moreinfo').addClass('lessinfo');
+			expander.css('maxHeight', '0px');
 			button.removeClass('lessinfo_button').addClass('moreinfo_button').html('+ More info +');
 			
-			expander.velocity('scroll', {delay: 1000, duration: 500, easing: 'ease-in-out', offset: -100});
+			expander.velocity('scroll', {delay: 500, duration: 500, easing: 'ease-in-out', offset: -100});
 						
 			bind_events();
 		});
