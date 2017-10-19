@@ -10,10 +10,21 @@ body
 	padding: 0;
 	font: normal normal normal 1.5em 'Pontano Sans', sans-serif;
 	background-color: #000000;
-	background-image: url('../media/novideo_bg.png');
+}
+
+#bgimg
+{
+	width: 100%;
+	height: 2000px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url('../media/novideo_bg.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top left;
+	z-index: -100;
 }
 
 h1, h2, h3, h4, h5
@@ -400,6 +411,67 @@ a.lessinfo_button
 	stroke-miterlimit: 10;
 }
 
+/*
+	ALERT BOX
+*/
+img.enlargeable {cursor: zoom-in;}
+
+#alertBlock
+{
+	position: fixed;
+	display: none;
+	top: 0; left: 0;
+	width: 100%;
+	z-index: 3000;
+}
+
+#blackout
+{
+	width: 100%;
+	height: 2000px;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(0,0,0,0.8);
+	overflow: auto;
+	transition: background-color 1s;
+}
+
+#blackout.whitebg
+{
+	background-color: rgba(255,255,255,0.8);
+}
+
+#blowup_menu
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	text-align: right;
+	padding: .5em;
+	margin-right: .5em;
+}
+
+#zoomin, #zoomout, #cancel_blowup, #btow
+{
+	width: 1em;
+	cursor: pointer;
+	padding: .5em;
+	border-radius: 40%;
+	background-color: white;
+	color: red;
+	margin-left: .3em;
+}
+
+#zoomout {display: none;}
+
+#blownup
+{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 100vh;
+	transition: max-width 1s, max-height 1s;
+}
 
 /*
 	WIDESCREEN

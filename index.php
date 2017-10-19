@@ -1,5 +1,3 @@
-<?php include('modules/data.php'); ?>
-
 <!DOCTYPE html>
 
 <html>
@@ -22,6 +20,7 @@
 </head>
 
 <body>
+	<div id='bgimg'></div>
 	<video id='bg' autoplay='autoplay' muted=''/>
 		<?php 
 			$video = rand(1, 7);
@@ -128,8 +127,7 @@
 				</div>
 				<div class='white_bg' id='full_pages'>
 					<div class='port_entry'>
-					<div class='whitefade'></div>
-						<img class='top_img' src='portfolio/websites/portfolio.png'/>
+						<img class='left_img' src='portfolio/websites/portfolio.jpg'/>
 						<h2>Portfolio Site</h2>
 						<p>This portfolio site emphasizes Velocity.js- and CSS3-based transitions, keeping server-side complexity to a minimum. Aside from the images and videos, the entirety of the site is structured from a single PHP file (index.php) and a single CSS stylesheet.</p>
 						<div class='expander lessinfo'>
@@ -145,8 +143,7 @@
 					</div>
 					
 					<div class='port_entry'>
-					<div class='whitefade'></div>
-						<img class='top_img' src='portfolio/websites/FUMC.png'/>
+						<img class='left_img' src='portfolio/websites/FUMC.jpg'/>
 						<h2>First United Methodist Church</h2>
 						<p><a href='http://www.firstumcgalesburg.org' target='_blank'>View live site</a> (may contain client alterations)<br/>
 							<a href='' target='_blank'>View preserved site</a></p>
@@ -158,8 +155,7 @@
 					</div>
 					
 					<div class='port_entry'>
-					<div class='whitefade'></div>
-						<img class='top_img' src='portfolio/websites/cms.png'/>
+						<img class='left_img' src='portfolio/websites/cms.jpg'/>
 						<h2>Content Management Demo</h2>
 						<p><a href='' target='_blank'>View demo</a></p>
 						<p>The custom CMS for the First Methodist webpage includes a PHP-based user account request and approval process, secure login with password hashing and salting, administrative task and page editing permissions that can be set per user, rich text page editing, and image management.</p>
@@ -170,15 +166,13 @@
 					</div>
 					
 					<div class='port_entry'>
-					<div class='whitefade'></div>
-						<img class='top_img' src='portfolio/websites/cms.png'/>
+						<img class='left_img' src='portfolio/websites/cms.jpg'/>
 						<h2>Sample Designs</h2>
 						<p>Various sample designs with placeholder content.</p>
 					</div>
 					
 					<div class='port_entry'>
-					<div class='whitefade'></div>
-						<img class='top_img' src='portfolio/websites/FUMC_old.png'/>
+						<img class='left_img' src='portfolio/websites/FUMC_old.jpg'/>
 						<h2>First United Methodist Church (2013-2016)</h2>
 						<p><a href='https://web.archive.org/web/20141217110954/http://firstumcgalesburg.org/' target='_blank'>View archived site</a></p>
 						<p>First United Methodist's webpage was my first major webpage design project, started in 2013. In order to wrap my mind around the code already in place on the website, my goal was not to redesign, but to replicate what the original designer had created, and to build on it from there. The result was a page that had a similar appearance to the original designer's (archived <a href='https://web.archive.org/web/20110706181819/http://firstumcgalesburg.org' target='_blank'>here</a>), but that was built from scratch. Nearly all graphics were recreated (including the header image), and all code is original.</p>
@@ -215,10 +209,10 @@
 						<p>View the <a href='portfolio/graphics/TC_images/TC_brochure.pdf' target='_blank'> Tutoring Center</a> and <a href='portfolio/graphics/TC_images/DS_brochure.pdf' target='_blank'>Disability Support</a> brochures.</p>
 						
 						<div class='img_scroll'>
-							<img src='portfolio/graphics/TC_images/Missy2.png' class='enlargeable'/>
-							<img src='portfolio/graphics/TC_images/Mark2.png' class='enlargeable'/>
-							<img src='portfolio/graphics/TC_images/Mark_BigBang2.png' class='enlargeable'/>
-							<img src='portfolio/graphics/TC_images/Mark_tutoring.png' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/Missy2.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/Mark2.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/Mark_BigBang2.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/Mark_tutoring.jpg' class='enlargeable'/>
 						</div>
 		
 						<div class='expander lessinfo'>
@@ -295,8 +289,8 @@
 						<h2>Various Logos/Text Designs</h2>
 						
 						<div class='img_scroll'>
-							<img src='portfolio/graphics/TC_images/DS.png' class='enlargeable'/><img src='portfolio/graphics/TC_images/TC_Logo_Large.png' class='enlargeable'/>
-							<img src='portfolio/graphics/TC_images/TC_Logo_Large_Vert.png' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/DS.png' class='enlargeable'/><img src='portfolio/graphics/TC_images/TC_Logo_Large.jpg' class='enlargeable'/>
+							<img src='portfolio/graphics/TC_images/TC_Logo_Large_Vert.jpg' class='enlargeable'/>
 							<img src='portfolio/graphics/Logos/umcg_logo2.png' class='enlargeable'/>
 							<img src='portfolio/graphics/Logos/umcg_logo_mobile2.png' class='enlargeable'/>
 							<img src='portfolio/graphics/Logos/CrisisCareLogo.jpg' class='enlargeable'/>
@@ -327,6 +321,7 @@
 	<?php include('modules/footer.php'); ?>
 </body>
 
+<script src="js/bigpicture.js"></script>
 <script>
 
 	//References
@@ -380,12 +375,40 @@
 			
 			nav_bar.addClass('enlarged');
 			
-			//Signature
-			var sig = new AniPath('#signature_svg', '.sigs');
-			sig.init();
-			sig.animate();
-		
-			$('#top_links a').css('visibility', 'hidden').velocity('transition.slideLeftIn', {delay:  5000, stagger: 250, visibility: 'visible', display: null});
+			//Make navbar invisible until bgs are loaded
+			$('#nav_bar').css('visibility', 'hidden');
+			
+			//Create image object to test if it's loaded
+			var bgimage = new Image;
+			bgimage.src = 'media/novideo_bg.jpg';
+			
+			//Ensure backgrounds are loaded
+			if($(window).width() >= mobile_threshold)
+			{
+				$('#bg').on('loadeddata', function() {
+					//Signature
+					var sig = new AniPath('#signature_svg', '.sigs');
+					sig.init();
+					sig.animate();
+				
+					$('#top_links a').css('visibility', 'hidden').velocity('transition.slideLeftIn', {delay:  5000, stagger: 250, visibility: 'visible', display: null});
+					
+					$('#nav_bar').css('visibility', 'visible');
+				});
+			}
+			else
+			{
+				$(bgimage).on('load', function() {
+					//Signature
+					var sig = new AniPath('#signature_svg', '.sigs');
+					sig.init();
+					sig.animate();
+				
+					$('#top_links a').css('visibility', 'hidden').velocity('transition.slideLeftIn', {delay:  5000, stagger: 250, visibility: 'visible', display: null});
+					
+					$('#nav_bar').css('visibility', 'visible');
+				});
+			}
 		}
 		
 		//Alter history (ensures current page status is logged)
@@ -474,6 +497,10 @@
 	$(document).ready(function()
 	{
 		nav_bar.removeClass('preload');
+	});
+	
+	$('.enlargeable').on('click', function() {
+		enlarge_img($(this).attr('src'));
 	});
 	
 	$(window).on('scroll', function() {

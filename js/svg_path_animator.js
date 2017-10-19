@@ -49,8 +49,6 @@ var AniPath = function(svg_obj, target_class = null)
 				if(indi_duration < min_speed) indi_duration = min_speed;
 				else
 					indi_duration = (Math.round(element.attr('data-length')/self.total_length * 100)/100) * dur;
-
-				console.log(indi_duration);
 			}
 			else
 				indi_duration = element.attr('data-speed');
