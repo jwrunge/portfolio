@@ -298,17 +298,47 @@ div.port_entry img.top_img
 {
 	max-width: none;
 	max-height: none;
-	width: 60%;
+	width: 100%;
 	margin: 1em auto 0 auto;
 	box-shadow: -.2em .2em .5em rgba(0,0,0,.5);	
 	display: block;
 }
+
+div.site_info
+{
+	border-style: solid;
+	border-color: #008cc8;
+	border-width: 2px;
+	
+	background-color: #7baec4;
+	
+	padding: 10px;
+	color: white;
+	
+	margin-top: 1em;
+}
+
+div.site_info p { color: white; }
+div.site_info h3 { color: white; }
+
+div.site_info a { color: yellow; }
+div.site_info a:hover { color: orange; }
+
+p.site_nugget
+{
+	font-size: .8em;
+	margin: 0;
+}
+
+p.site_nugget a  { color: yellow; }
+p.site_nugget a:hover  { color: orange; }
 
 div.expander
 {
 	overflow: hidden;
 	transition: all .5s ease-in-out;
 	max-height: 0;
+	margin: 1em 0;
 }
 
 a.moreinfo_button, a.lessinfo_button
@@ -318,8 +348,14 @@ a.moreinfo_button, a.lessinfo_button
 	border-radius: .2em;
 	color: white;
 	padding: .25em;
-	width: 5em;
+	width: 7em;
 	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: -1em;
+	text-align: center;
+	
 }
 
 a.lessinfo_button
@@ -519,6 +555,11 @@ img.enlargeable {cursor: zoom-in;}
 		float: right;
 		width: 40%;
 		margin-left: .5em;
+	}
+	
+	div.port_entry img.top_img
+	{
+		width: 60%;
 	}
 
 }

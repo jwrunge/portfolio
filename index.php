@@ -43,7 +43,6 @@
 	</video>
 
 	<?php
-		//include('modules/processing.php');
 		include('modules/navigation.php');
 	?>
 	
@@ -59,11 +58,11 @@
 				<div class='white_bg' id='personal_intro'>
 					<h2>Introduction</h2>
 					<img src='media/j&m.png' class='left_img'/>
-					<p>I'm a hobbyist web designer living in Illinois with my wife, Mary, and our three dogs, Max, Lucky, and Sadie. We lead pretty busy lives, so we mostly enjoy any opportunity we can get to just stay home and watch a movie, write strange stories, or play board games. A lot of our weekends are spent on our snail's-pace home renovation. A chunk of my weekend is also typically dedicated to web projects as well, whether that be tweaking the layout and design of a site, learning new JavaScript and CSS tricks, or fiddling with database code.</p>
+					<p>I'm a hobbyist web designer living in Illinois with my wife, Mary, and our three dogs, Max, Lucky, and Sadie. We lead pretty busy lives, so we mostly enjoy any opportunity we can get to just stay home and watch a movie, write strange stories, or play board games. A lot of our weekends are spent on our snail's-pace home renovation. A chunk of my weekend is also typically dedicated to web projects, whether that be tweaking the layout and design of a site, learning new JavaScript and CSS tricks, or fiddling with database code.</p>
 					<img src='media/dogs.png' class='right_img'/>
 					<p>Web design has provided me the opportunity to combine the activities I have enjoyed since childhood, from art to coding to writing. It has become something I love getting lost in--practical puzzles not just to be set aside when solved, but that always make me just a little better of a coder and a little more skillful of a designer; a little more efficient and a little more adventurous. I have discovered a passion for developing engaging, responsive, and accessible designs and interfaces, and for writing code that is useful, adaptable, and efficient.</p>
 					<p>Web design isn't my day job (though I hope to make a career of it). I graduated from Knox College in 2010 with a double-major in Creative Writing and Secondary Educational Studies, and my experiences since then have mostly orbited higher education. Currently, I coordinate disability support services and the tutoring program at Carl Sandburg College.</p>
-					<p>I would appreciate the opportunity to talk with you more about my work. Please feel free to <a>contact me</a> to start a conversation. You should also check out my portfolio, which features examples of my site designs, code snippets in PHP and JavaScript, and various graphic projects.</p>
+					<p>I would appreciate the opportunity to talk with you more about my work. Please feel free to <a href='mailto:jwrunge@sandburg.edu'>contact me</a> to start a conversation. You should also check out my portfolio, which features examples of my site designs, code snippets in PHP and JavaScript, and various graphic projects.</p>
 
 				</div>
 
@@ -127,180 +126,246 @@
 				</div>
 				<div class='white_bg' id='full_pages'>
 					<div class='port_entry'>
-						<img class='left_img' src='portfolio/websites/portfolio.jpg'/>
+						<img class='top_img' src='portfolio/websites/portfolio.jpg'/>
 						<h2>Portfolio Site</h2>
-						<p>This portfolio site emphasizes Velocity.js- and CSS3-based transitions, keeping server-side complexity to a minimum. Aside from the images and videos, the entirety of the site is structured from a single PHP file (index.php) and a single CSS stylesheet.</p>
-						<div class='expander lessinfo'>
-							<h3>Features</h3>
-							<ul>
-								<li>Single-page design</li>
-								<li>Dynamic content display based on URL hash</li>
-								<li>JavaScript History API used to define browser back/forward button behavior</li>
-								<li>One of five random video backgrounds loaded on the splash screen</li>
-							</ul>
+						<div class='site_info'>
+							<p class='site_nugget'><b>Website:</b> <a href='http://www.jacobrunge.com' target='_blank'>Jacob Runge - Portfolio</a></p>
+							<p class='site_nugget'><b>Created:</b> 2017</p>
+							<p class='site_nugget'>All code available on <a href='https://github.com/jwrunge/portfolio' target='_blank'>GitHub</a></p>
+							
+							<div class='expander lessinfo'>
+								<h3>Features</h3>
+								<ul>
+									<li>Single-page design</li>
+									<li>Dynamic content display based on URL hash</li>
+									<li>JavaScript History API used to define browser back/forward button behavior</li>
+									<li>One of five random video backgrounds loaded on the splash screen</li>
+									<li>Velocity.js and CSS3-based animations</li>
+								</ul>
+							</div>
 						</div>
+						
 						<a class='moreinfo_button'>+ More info +</a>
 					</div>
 					
 					<div class='port_entry'>
-						<img class='left_img' src='portfolio/websites/FUMC.jpg'/>
+						<img class='top_img' src='portfolio/websites/FUMC.jpg'/>
 						<h2>First United Methodist Church</h2>
-						<p><a href='http://www.firstumcgalesburg.org' target='_blank'>View live site</a> (may contain client alterations)<br/>
-							<a href='' target='_blank'>View preserved site</a></p>
-						<p>The First United Methodist page design philosophy was to create a "digital poster. This stands in contrast to the previous page design (shown below), which offered a more traditional webpage structure and regular news and events updates. This current iteration eschews excessive information, instead focusing on prominently advertising the church's location and methods to contact the church and highlighting the church's mission statement.</p>
-						<div class='expander lessinfo'>
-							<p>Structurally, from the user perspective, the page consists of three PHP pages: an index, a content page (which dynamically loads content for various subpages from a SQL database), and a staff directory page. The content and staff directory pages also include PHP files containing functions for interfacing with database and displaying page content. Additional PHP files allow users to create accounts and log in, making up a custom content management system (demo featured below) that allows church staff to modify subpage content without altering the page structure.</p>
+						<div class='site_info'>
+							<p class='site_nugget'><b>Website:</b> <a href='http://www.firstumcgalesburg.org' target='_blank'>First United Methodist Church [live site]</a></p>
+							<p class='site_nugget'><b>Created:</b> 2016 (currently maintained)</p>
+							
+							<div class='expander lessinfo'>
+								<h3>Features</h3>
+								<ul>
+									<li>Promotionally-based (a "digital poster")</li>
+									<li>Design based on FUMC mission statement</li>
+									<li>Mobile-first responsive</li>
+									<li>Content page loads data dynamically from SQL database</li>
+									<li>Custom CMS for church staff</li>
+								</ul>
+								<h3>Custom CMS includes:</h3>
+								<ul>
+									<li>User account creation</li>
+									<li>Permissions management</li>
+									<li>Rich-text page editing</li>
+									<li>Image management</li>
+									<li>AJAX page updates</li>
+								</ul>
+							</div>
 						</div>
+
 						<a class='moreinfo_button'>+ More info +</a>
 					</div>
 					
 					<div class='port_entry'>
-						<img class='left_img' src='portfolio/websites/cms.jpg'/>
+						<img class='top_img' src='portfolio/websites/cms.jpg'/>
 						<h2>Content Management Demo</h2>
-						<p><a href='' target='_blank'>View demo</a></p>
-						<p>The custom CMS for the First Methodist webpage includes a PHP-based user account request and approval process, secure login with password hashing and salting, administrative task and page editing permissions that can be set per user, rich text page editing, and image management.</p>
-						<div class='expander lessinfo'>
-							<p>This demo removes account creation and approval features, instead creating a random account tied to the user's session. Changes made via the CMS, while they do operate on a real database, are visible only to the user that made them, and the changes they make are erased after their session ends.</p>
+						<div class='site_info'>
+							<p class='site_nugget'><b>Website:</b> <a target='_blank'>CMS Demo</a> [currently unavailable]</p>
+							<p class='site_nugget'><b>Created:</b> 2016-2017</p>
+							
+							<div class='expander'>
+							<h3>About</h3>
+							<p>The CMS demo, as implemented on the First United Methodist Church website. Some features (like account creation and permissions management) unavailable. The demo will create a temporary account and allow the user to change content in the site database; however, those changes will only appear to that user for the duration of their session.</p>
+							</div>
 						</div>
+						
 						<a class='moreinfo_button'>+ More info +</a>
 					</div>
 					
 					<div class='port_entry'>
-						<img class='left_img' src='portfolio/websites/cms.jpg'/>
+						<img class='top_img' src='portfolio/websites/assorted.jpg'/>
 						<h2>Sample Designs</h2>
-						<p>Various sample designs with placeholder content.</p>
+						<div class='site_info'>
+							<p class='site_nugget'><b>Websites:</b> [coming soon]</p>
+							<p class='site_nugget'><b>Created:</b> 2016-2017</p>
+						</div>
 					</div>
 					
 					<div class='port_entry'>
-						<img class='left_img' src='portfolio/websites/FUMC_old.jpg'/>
+						<img class='top_img' src='portfolio/websites/FUMC_old.jpg'/>
 						<h2>First United Methodist Church (2013-2016)</h2>
-						<p><a href='https://web.archive.org/web/20141217110954/http://firstumcgalesburg.org/' target='_blank'>View archived site</a></p>
-						<p>First United Methodist's webpage was my first major webpage design project, started in 2013. In order to wrap my mind around the code already in place on the website, my goal was not to redesign, but to replicate what the original designer had created, and to build on it from there. The result was a page that had a similar appearance to the original designer's (archived <a href='https://web.archive.org/web/20110706181819/http://firstumcgalesburg.org' target='_blank'>here</a>), but that was built from scratch. Nearly all graphics were recreated (including the header image), and all code is original.</p>
+						<div class='site_info'>
+							<p class='site_nugget'><b>Website:</b> <a href='https://web.archive.org/web/20141217110954/http://firstumcgalesburg.org/' target='_blank'>First United Methodist (2013-2016)</a> [archived]</p>
+							<p class='site_nugget'><b>Created:</b> 2013-2014 (maintained through 2016)</p>
+							
+							<div class='expander'>
+								<h3>About</h3>
+								<p>First United Methodist's webpage was my first major webpage design project, started in 2013. In order to wrap my mind around the code already in place on the website, my goal was not to redesign, but to replicate what the original designer had created, and to build on it from there. The result was a page that had a similar appearance to the original designer's (archived <a href='https://web.archive.org/web/20110706181819/http://firstumcgalesburg.org' target='_blank'>here</a>), but that was built from scratch. Nearly all graphics were recreated (including the header image), and all code is original.</p>
+							</div>
+						</div>
+						
+						<a class='moreinfo_button'>+ More info +</a>
 					</div>
-				</div>
+					
+				</div><!--End website section-->
+				
 				<div class='white_bg' id='code'>
 				
-				<div class='port_entry'>
-					<h2>Code</h2>
-					<p>Most all code for the websites I have created is available online at <a href='https://github.com/jwrunge' target='_blank'>my GitHub page</a>. Stand-alone code (such as JQuery or Velocity plugins) is demoed below.</p>
-				</div>
-				
 					<div class='port_entry'>
+						<h2>Code</h2>
+						<p>Most all code for the websites I have created is available online at <a href='https://github.com/jwrunge' target='_blank'>my GitHub page</a>. Stand-alone code (such as JQuery or Velocity plugins) is demoed below.</p>
+				
 						<h2>Screen Switch</h2>
 						<p>Using Velocity.js or JQuery animations. Allows dynamic switching of menu screens tied to submenu links. Full code and documentation available <a href='https://github.com/jwrunge/switchmenu' target='_blank'>on GitHub</a>.</p>
-						<script async src="//jsfiddle.net/jwrunge/4661n2qf/embed/result,js,html/"></script>
-					</div>
+						<iframe width="100%" height="300" src="//jsfiddle.net/jwrunge/4661n2qf/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 					
-					<div class='port_entry'>
 						<h2>SVG Animator</h2>
 						<p>Auto animates SVG images with options for fine-grain control. Good for <a href='https://jsfiddle.net/jwrunge/bqrykL52/' target='_blank'>animating signatures</a>. Full code and documentation <a href='https://github.com/jwrunge/SVG-Path-Animator' target='_blank'>on GitHub</a>.</p>
-						<script async src="//jsfiddle.net/jwrunge/agywh09x/embed/result,js,html/"></script>
-					</div>
+						<iframe width="100%" height="300" src="//jsfiddle.net/jwrunge/agywh09x/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 					
-					<div class='port_entry'>
 						<h2>Form Validator</h2>
-						<p>Front- and back-end form validation. Full code and documentation <a href='https://github.com/jwrunge/Form-Validation' target='_blank'>on GitHub</a>.</p>
+						<p>Front- and back-end form validation. Full code and documentation <a href='https://github.com/jwrunge/Form-Validation' target='_blank'>on GitHub</a>. Example coming soon.</p>
+						
+						<p>Additional code demos coming soon.</p>
 					</div>
 				</div>
+			
 				<div class='white_bg' id='graphics'>
 					<div class='port_entry'>
 						<h2>Carl Sandburg College promotions</h2>
-						<p>A series of parody advertisements for the Carl Sandburg College Tutoring Center, sized at 22"x28", featuring tutors in classic posters and pop culture advertisements; and images related to Tutoring Center and Disability Support brochures.</p>
-						<p>View the <a href='portfolio/graphics/TC_images/TC_brochure.pdf' target='_blank'> Tutoring Center</a> and <a href='portfolio/graphics/TC_images/DS_brochure.pdf' target='_blank'>Disability Support</a> brochures.</p>
-						
-						<div class='img_scroll'>
-							<img src='portfolio/graphics/TC_images/Missy2.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/TC_images/Mark2.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/TC_images/Mark_BigBang2.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/TC_images/Mark_tutoring.jpg' class='enlargeable'/>
+					
+						<div class='site_info'>
+							<h3>Brochures</h3>
+							<p class='site_nugget'><b>Created:</b> 2017</p><br/>
+							<p>PDF brochures for the Tutoring Center and Disability Support Services. View the <a href='portfolio/graphics/TC_images/TC_brochure.pdf' target='_blank'> Tutoring Center</a> and <a href='portfolio/graphics/TC_images/DS_brochure.pdf' target='_blank'>Disability Support</a> brochures.</p>
+							
+							<div class='expander lessinfo'>
+								<p>I removed the background of the image of Mark Beckham tutoring to make the scene less crowded and the image more versatile. Removing the pink bag in the foreground required reconstructing part of Mark's hand, the desk, and several papers (comparison below).</p>
+								<div class='img_scroll'>
+									<img src='portfolio/graphics/TC_images/IMG_8236.jpg' class='enlargeable'/>
+									<img src='portfolio/graphics/TC_images/Mark_tutoring.png' class='enlargeable'/>
+								</div>
+							</div>
 						</div>
+						<a class='moreinfo_button'>+ More info +</a>
+						
+						<div class='site_info'>
+							<h3>Poster Ads</h3>
+							<p class='site_nugget'><b>Created:</b> 2017</p><br/>
+							<p>A series of parody advertisements for the Carl Sandburg College Tutoring Center, sized at 22"x28", featuring tutors in classic posters and pop culture advertisements.</p>
+							<div class='img_scroll'>
+								<img src='portfolio/graphics/TC_images/Missy2.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/TC_images/Mark2.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/TC_images/Mark_BigBang2.jpg' class='enlargeable'/>
+							</div>
+			
+							<div class='expander lessinfo'>
+								<p>Reference images were incorporated to varying degrees into the final posters. For the Rosie the Riveter poster, I took the full background image of the original and filled in gaps where necessary; the Uncle Sam poster incorporated some of the original text art; the <i>Big Bang Theory</i> poster background was replicated from scratch, with no actual elements taken directly from the original.</p>							
+								<div class='img_scroll'>
+									<img src='portfolio/graphics/TC_images/rosie-the-riveter-poster-s.jpg' class='enlargeable'/>
+									<img src='portfolio/graphics/TC_images/poster.jpg' class='enlargeable'/>
+									<img src='portfolio/graphics/TC_images/bbt.jpg' class='enlargeable'/>
+								</div>
+							</div>
+						</div>
+						<a class='moreinfo_button'>+ More info +</a>
+					</div>
+					
+					<div class='port_entry'>
+						<h2>Image Corrections</h2>
+						
+						<div class='site_info'>
+							<h3>Personal Images</h3>
+							<p class='site_nugget'><b>Created:</b> 2017</p><br/>
+							<p>Image of my wife and I, color-corrected and brightened. I removed my double-chin, fixed my teeth, and altered my eyes to make it appear as though I was looking at the camera.</p>
+							<div class='img_scroll'>
+								<img src='media/j&m.jpg' class='enlargeable'/>
+								<img src='media/j&m.png' class='enlargeable'/>
+							</div>
+						
+							<p>Image of my dogs. Corrected green tint and carpeted over the tattered transition to tile.</p>
+							<div class='img_scroll'>
+								<img src='media/dogs.jpg' class='enlargeable'/>
+								<img src='media/dogs.png' class='enlargeable'/>
+							</div>
+						</div>
+							
+					</div><!--end port_entry-->
+					
+					<div class='port_entry'>
+						<h2>Methodist Church Promotions</h2>
+						
+						<div class='site_info'>
+							<h3>"Just Us League" images</h3>
+							<p class='site_nugget'><b>Created:</b> 2017</p><br/>
+							<p>View "Just Us League" promo cards <a href='portfolio/graphics/JLCards/cards.pdf' target='_blank'>here</a>.</p>
+						
+							<div class='img_scroll'>
+								<img src='portfolio/graphics/JLCards/just_us_league_logo.png' class='enlargeable'/>
+								<img src='portfolio/graphics/JLCards/just_us_league_logo_black.png' class='enlargeable'/>
+								<img src='portfolio/graphics/JLCards/just_us_league_logo_hori.png' class='enlargeable'/>
+								<img src='portfolio/graphics/JLCards/just_us_league_logo_hori_black.png' class='enlargeable'/>
+							</div>
+						
+							<div class='expander lessinfo'>
+								<h3>Reference Image:</h3>
+								<p>The original "Justice League" logo, used as inspiration.</p>
+								<img src='portfolio/graphics/JLCards/justice-league-logo.jpg' class='enlargeable'/>
+							</div>
+						</div>
+						<a class='moreinfo_button'>+ More info +</a>
+										
+						<div class='site_info'>
+							<h3>Assorted Posters</h3>
+							<p class='site_nugget'><b>Created:</b> 2013-2015</p><br/>
+							<p>Images in these posters are not mine; text designs and layouts are.</p>
+						
+							<div class='img_scroll'>
+								<img src='portfolio/graphics/FUMC_Posters/Breakfast1.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/FUMC_Posters/GreenPotluck.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/FUMC_Posters/HealthyEating.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/FUMC_Posters/IceCreamFun.jpg' class='enlargeable'/>
+							</div>
+						</div>
+					
+						<div class='site_info'>
+							<h3>Crisis Care brochure</h3>
+							<p class='site_nugget'><b>Created:</b> 2014</p><br/>
+							<p>View the Crisis Care brochure <a href='portfolio/graphics/CC_Brochure/ccBrochure.pdf' target='_blank'>here</a>
+						</div>
+					
+						<div class='site_info'>
+							<h3>Methodist Church movie ads</h3>
+							<p class='site_nugget'><b>Created:</b> 2013-2014</p><br/>
+							<p>Posters created between 2013 and 2015 advertising Blockbuster Bible Study.</p>
+						
+							<div class='img_scroll'>
+								<img src='portfolio/graphics/FUMC_Movies/DayAfterTomorrow.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/FUMC_Movies/FlyAway.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/FUMC_Movies/MarchDinnerDelight.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/FUMC_Movies/MightyJoeYoung.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/FUMC_Movies/PrincessDiariesPoster.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/FUMC_Movies/SwingVote.jpg' class='enlargeable'/>
+								<img src='portfolio/graphics/FUMC_Movies/TheVillage.jpg' class='enlargeable'/>
+							</div>
+						</div>
+					</div><!--end port_entry-->
+				</div><!--end #graphics-->
+			</div><!--end .pad-->
+		</div><!--end #portfolio-->
 		
-						<div class='expander lessinfo'>
-							<h3>Originals:</h3>
-							<p>Original images were taken by a Tutoring Center staff member against a solid-colored wall. Images of Mark Beckham and Missy Paris used with their permission.</p>
-							<p>The image of Mark Beckham tutoring was altered to both remove the background (to make the image more versatile and remove distracting background activity) and to eliminate extraneous items in the foreground. For example, the pink bag was removed, requiring me to paint Mark's hand  and portions of the table and papers back into the scene.</p>
-							<div class='img_scroll'>
-								<img src='portfolio/graphics/TC_images/Missy.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/TC_images/MARKK.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/TC_images/Mark-Sheldon.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/TC_images/IMG_8236.jpg' class='enlargeable'/>
-							</div>
-
-							<h3>Reference Images:</h3>
-							<p>Reference images were incorporated to varying degrees into the final posters. For the Rosie the Riveter poster, I took the full background image of the original and filled in gaps where necessary; the Uncle Sam poster incorporated some of the original text art; the <i>Big Bang Theory</i> poster background was replicated from scratch, with no actual elements taken directly from the original.</p>							
-							<div class='img_scroll'>
-								<img src='portfolio/graphics/TC_images/rosie-the-riveter-poster-s.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/TC_images/poster.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/TC_images/bbt.jpg' class='enlargeable'/>
-							</div>
-						</div>
-						<a class='moreinfo_button'>+ More info +</a>
-					</div>
-					
-					<div class='port_entry'>
-						<h2>Methodist Church "Just Us League"</h2>
-						<p>"Just Us League" sermon series advertisement created 2017. View "Just Us League" promo cards <a href='portfolio/graphics/JLCards/cards.pdf' target='_blank'>here</a>.</p>
-						
-						<div class='img_scroll'>
-							<img src='portfolio/graphics/JLCards/just_us_league_logo.png' class='enlargeable'/>
-							<img src='portfolio/graphics/JLCards/just_us_league_logo_black.png' class='enlargeable'/>
-							<img src='portfolio/graphics/JLCards/just_us_league_logo_hori.png' class='enlargeable'/>
-							<img src='portfolio/graphics/JLCards/just_us_league_logo_hori_black.png' class='enlargeable'/>
-						</div>
-						
-						<div class='expander lessinfo'>
-							<h3>Reference Image:</h3>
-							<p>The original "Justice League" logo, used as inspiration.</p>
-							<img src='portfolio/graphics/JLCards/justice-league-logo.jpg' class='enlargeable'/>
-						</div>
-						<a class='moreinfo_button'>+ More info +</a>
-						
-					</div>
-					
-					<div class='port_entry'>
-						<h2>Methodist Church promotions</h2>
-						<p>Posters created between 2013 and 2015. Text design and layout are mine; photos and images are not.</p>
-						<p>View the Crisis Care brochure <a href='portfolio/graphics/CC_Brochure/ccBrochure.pdf' target='_blank'>here</a>
-						
-						<div class='img_scroll'>
-							<img src='portfolio/graphics/FUMC_Posters/Breakfast1.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/FUMC_Posters/GreenPotluck.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/FUMC_Posters/HealthyEating.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/FUMC_Posters/IceCreamFun.jpg' class='enlargeable'/>
-						</div>
-					</div>
-					
-					<div class='port_entry'>
-						<h2>Methodist Church movie ads</h2>
-						<p>Posters created between 2013 and 2015 for Blockbuster Bible Study.</p>
-						
-						<div class='img_scroll'>
-							<img src='portfolio/graphics/FUMC_Movies/DayAfterTomorrow.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/FUMC_Movies/FlyAway.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/FUMC_Movies/MarchDinnerDelight.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/FUMC_Movies/MightyJoeYoung.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/FUMC_Movies/PrincessDiariesPoster.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/FUMC_Movies/SwingVote.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/FUMC_Movies/TheVillage.jpg' class='enlargeable'/>
-						</div>
-					</div>
-					
-					<div class='port_entry'>
-						<h2>Various Logos/Text Designs</h2>
-						
-						<div class='img_scroll'>
-							<img src='portfolio/graphics/TC_images/DS.png' class='enlargeable'/><img src='portfolio/graphics/TC_images/TC_Logo_Large.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/TC_images/TC_Logo_Large_Vert.jpg' class='enlargeable'/>
-							<img src='portfolio/graphics/Logos/umcg_logo2.png' class='enlargeable'/>
-							<img src='portfolio/graphics/Logos/umcg_logo_mobile2.png' class='enlargeable'/>
-							<img src='portfolio/graphics/Logos/CrisisCareLogo.jpg' class='enlargeable'/>
-						</div>
-						
-					</div>
-					
-				</div>
-			</div>
-		</div>
 		<div id='contact' class='main_screen'>
 			<div class='pad'>
 				<h1>Contact Me</h1>
@@ -464,7 +529,7 @@
 			e.stopPropagation();
 			
 			var button = $(this);
-			var expander = $(this).prev('div.expander');
+			var expander = $(this).prev('div.site_info').find('div.expander');
 			
 			//expander.removeClass('lessinfo').addClass('moreinfo');
 			expander.css('maxHeight', expander[0].scrollHeight + 'px');
@@ -481,7 +546,7 @@
 			e.stopPropagation();
 			
 			var button = $(this);
-			var expander = $(this).prev('div.expander');
+			var expander = $(this).prev('div.site_info').find('div.expander');
 			
 			expander.css('maxHeight', '0px');
 			button.removeClass('lessinfo_button').addClass('moreinfo_button').html('+ More info +');
