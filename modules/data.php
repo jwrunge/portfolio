@@ -2,8 +2,8 @@
 
 $sname = 'localhost';
 $dname = 'jakeSite';
-$uname = 'REDACTED';
-$pword = 'REDACTED';
+$uname = 'jwrunge';
+$pword = 'JwrMcr2010!';
 
 //Connect to database
 $con = new PDO("mysql:host=$sname; dbname=$dname", $uname, $pword);

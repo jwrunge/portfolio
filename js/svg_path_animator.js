@@ -6,16 +6,22 @@ $.Velocity.RegisterUI('write', {
         [ { strokeDashoffset: 0}, 1 ]	]
 });
 
-var AniPath = function(svg_obj, target_class = null)
+var AniPath = function(svg_obj, target_class)
 {
+        target_class = target_class || null;
+
 	this.total_length = 0;
 	this.sequence = [];
 	
 	if(!target_class) target_class = 'path';
 
 	//The init/reset function - set strokes and offsets to path lengths
-	this.init = function(dur = 3000, del = 0, min_speed = 0)
+	this.init = function(dur, del, min_speed)
 	{
+                dur = dur || 3000;
+                del = del || 0;
+                min_speed = min_speed || 0;
+
 		var self = this;
 		self.total_length = 0;
 		self.sequence = [];

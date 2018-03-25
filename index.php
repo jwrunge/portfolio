@@ -4,12 +4,11 @@
 
 <head>
 	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Jacob Runge</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/main.css"/>
-	<link rel="stylesheet" type="text/css" href="style/index.css"/>
 	
 	<!--JavaScript files-->
 	<script src="js/jquery-min.js"></script>
@@ -20,25 +19,23 @@
 </head>
 
 <body>
+	<script>
+		$('body').prepend('<div id=\'loading_screen\'><div id=\'left_shutter\'></div><div id=\'right_shutter\'></div><div id=\'setup_loading\'><p>Getting set up</p><img src=\'media/Ellipsis.svg\'/></div></div>'); //Set up loading shutters and text
+	</script>
+	
 	<div id='bgimg'></div>
-	<video id='bg' autoplay='autoplay' muted=''/>
+	<video id='bg' alt='' muted>
 		<?php 
-			$video = rand(1, 7);
+			$video = rand(1, 4);
 			
 			if($video == 1)
 				echo "<source src='media/Coffee.mp4' type='video/mp4'/>";
 			else if($video == 2)
 				echo "<source src='media/Cookie.mp4' type='video/mp4'/>";
 			else if($video == 3)
-				echo "<source src='media/Folio.mp4' type='video/mp4'/>";
+				echo "<source src='media/Coffee.mp4' type='video/mp4'/>";
 			else if($video == 4)
 				echo "<source src='media/Coffee.mp4' type='video/mp4'/>";
-			else if($video == 5)
-				echo "<source src='media/Pen.mp4' type='video/mp4'/>";
-			else if($video == 6)
-				echo "<source src='media/Coffee.mp4' type='video/mp4'/>";
-			else if($video == 7)
-				echo "<source src='media/Spill.mp4' type='video/mp4'/>";
 		?>
 	</video>
 
@@ -49,341 +46,106 @@
 	<div id='content_body'>
 		<div id='splash_screen'></div>
 		<div id='introduction' class='main_screen'>
-			<div class='pad'>
-				<h1>About Jake</h1>
-				<div id='introduction_menu' class='submenu'>
-					<a href='#personal_intro'>Introduction</a>
-					<a href='#resume'>R&eacute;sum&eacute;</a>
-				</div>
-				<div class='white_bg' id='personal_intro'>
-					<h2>Introduction</h2>
-					<img src='media/j&m.png' class='left_img'/>
-					<p>I'm a hobbyist web designer living in Illinois with my wife, Mary, and our three dogs, Max, Lucky, and Sadie. We lead pretty busy lives, so we mostly enjoy any opportunity we can get to just stay home and watch a movie, write strange stories, or play board games. A lot of our weekends are spent on our snail's-pace home renovation. A chunk of my weekend is also typically dedicated to web projects, whether that be tweaking the layout and design of a site, learning new JavaScript and CSS tricks, or fiddling with database code.</p>
-					<img src='media/dogs.png' class='right_img'/>
-					<p>Web design has provided me the opportunity to combine the activities I have enjoyed since childhood, from art to coding to writing. It has become something I love getting lost in--practical puzzles not just to be set aside when solved, but that always make me just a little better of a coder and a little more skillful of a designer; a little more efficient and a little more adventurous. I have discovered a passion for developing engaging, responsive, and accessible designs and interfaces, and for writing code that is useful, adaptable, and efficient.</p>
-					<p>Web design isn't my day job (though I hope to make a career of it). I graduated from Knox College in 2010 with a double-major in Creative Writing and Secondary Educational Studies, and my experiences since then have mostly orbited higher education. Currently, I coordinate disability support services and the tutoring program at Carl Sandburg College.</p>
-					<p>I would appreciate the opportunity to talk with you more about my work. Please feel free to <a href='mailto:jwrunge@sandburg.edu'>contact me</a> to start a conversation. You should also check out my portfolio, which features examples of my site designs, code snippets in PHP and JavaScript, and various graphic projects.</p>
-
-				</div>
-
-				<div class='white_bg' id='resume'>
-					<h2>R&eacute;sum&eacute;</h2>
-					<h3>Web Design Experience</h3>
-					<h4>Languages and Tools</h4>
-					<ul>
-						<li>HTML5 and CSS3</li>
-						<li>Client-side: JavaScript (with JQuery and Velocity.js) and AJAX</li>
-						<li>Server-side: PHP 7 (PDO for SQL prepared statements); MySQL (and phpMyAdmin) for database management</li>
-						<li>Composition in Notepad++, testing with Bitnami Wampstack (with Apache web server)</li>
-						<li>Content management experience with CPanel, FileZilla FTP</li>
-						<li>Graphics: GIMP and Inkscape (image editing); DaVinci Resolve (video editing)</li>
-					</ul>
-					
-					<h4>Work Experience</h4>
-					<h5>Coordinator of Academic Support Services</h5>
-					<i>Carl Sandburg College, Galesburg, IL - December 2013 – present</i>
-					<ul>
-						<li>Ensured institutional compliance to ADA specifications for academic accessibility to students with disabilities, including the accessibility of online and electronic course content</li>
-						<li>Evaluated and implemented accommodations for fair and equal academic access to students with disabilities by approving, implementing, and enforcing classroom disability accommodations</li>
-						<li>Streamlined disability support processes by automating forms and intake systems</li>
-						<li>Maintained currency and accessibility for various assistive technologies, including text-to-speech and voice-to-text applications, magnification devices, and technology loans</li>
-						<li>Updated, configured, and maintained inventory on a laptop loan program of over 50 laptops</li>
-						<li>Coordinated drop-in, arranged, and online tutoring in general, computer, and healthcare education</li>
-						<li>Grew the college tutoring program, managing a staff of over 20 tutors and expanding our tutorial services into subject areas including accounting, radiologic technology, and dental hygiene</li>
-						<li>Developed a tutor training regimen for College Reading and Learning Association (CRLA) certification</li>
-						<li>Tracked and used data on disability support, tutoring, and equipment loans to make informed decisions on program policies and spending habits</li>
-						<li>Collaborated on institutional compliance for a large, renewable grant</li>
-						<li>Contributed to campus safety evaluation and policy as part of the Risk Management Committee</li>
-						<li>Developed dynamic working relationships with all campus departments</li>
-					</ul>
-					<h5>Adjunct Instructor and Teaching Assistant, Composition</h5>
-					<p>
-						<i>Adjunct: Carl Sandburg College, Galesburg, IL - August 2011 – December 2013</i><br/>
-						<i>TA: Western Illinois University, Macomb, IL	- August 2012 – December 2013</i><br/>
-					</p>
-					<h5>Peer and Professional Tutor / Writing Center Consultant</h5>
-					<p>
-						<i>Western Illinois University, Macomb, IL - August 2012 – May 2013</i><br/>
-						<i>Carl Sandburg College, Galesburg, IL	January 2009 – January 2013</i><br/>
-						<i>Knox College, Galesburg, IL	September 2007 – June 2010</i>
-					</p>
-					<h4>Education</h4>
-					Associate in Applied Science, IT LAN and Security Specialist<br/>
-					<i>Carl Sandburg College, Galesburg, IL—July 2017</i><br/><br/>
-					Bachelor of Arts in Creative Writing and Educational Studies<br/>
-					<i>Knox College, Galesburg, IL—June 2010</i>
-
-				</div>
+			<h1>Web Design</h1>
+			<div id='introduction_menu' class='submenu'>
+				<a href='#web_design'>Services</a>
+				<a href='#personal_intro'>About Me</a>
 			</div>
+			<div class='white_bg' id='web_design'>
+				<div class='regular_block'>
+					<h2>Let me build you something awesome</h2>
+					<p>I build <b>dynamic, responsive, vibrant web experiences</b> that are both <b>intuitive and fun to interact with</b>. From static, promotional websites to interactive web applications, my designs will give your users something to remember you by.</p>
+					
+					<div class='button_list'>
+						<input class='samples' type='button' value='See my portfolio'/>
+						<input class='getintouch' type='button' value='Get in touch'/>
+					</div>
+				</div>
+					
+				<div class='dark_block attention_block'>
+					<img src='media/responsive.svg'/>
+					<div class='fifty'>
+                        <h3><span class='line'>Responsive designs built</span> <span class='line'>for every</span> <span class='line'>screen size</span></h3>
+                        <p>Every design is rigorously tested to ensure it looks just as good on a tiny smartphone as it does on a widescreen computer monitor. With <a href='https://marketingland.com/mobile-top-sites-165725' target='_blank'>56% of consumer web traffic coming from mobile devices</a>, it's just silly not to.</p>
+					</div>
+					<br clear='both'/>			
+				</div>
+                
+                <div id='library_bg' class='attention_block'>
+                    <img src='media/databook.svg'/>
+					<div class='fifty leftmost'>
+                        <h3><span class='line'>Strong back-end</span> <span class='line'>architecture </span> <span class='line'>and data management</span></h3>
+						<p>Solid server-side architecture for dynamic, interactive web applications; powerful custom content management; and reliable database interaction and record-keeping.</p>
+					</div>
+					<br clear='both'/>					
+				</div>
+				
+				<div class='dark_block attention_block'>
+                    <img src='media/intuitive.svg'/>
+					<div class='fifty'>
+                        <h3><span class='line'>UI that's intuitive</span> <span class='line'>and fun to use</span></h3>
+						<p>Your app or website works how your clients think it should, both with a mouse and keyboard and with a touchscreen. Because good user interface design is fun to interact with, your site will never be boring!</p>
+					</div>
+					<br clear='both'/>					
+                </div>
+                
+                <div id='traffic_bg' class='attention_block'>
+					<img src='media/traffic_light.svg'/>
+					<div class='fifty leftmost'>
+                        <h3><span class='line'>Drive traffic</span> <span class='line'>to your app</span> <span class='line'>or website</span></h3>
+						<p>Vibrant design, useful functionality, and an enjoyable user experience keeps them coming back.</p>
+					</div>
+					<br clear='both'/>					
+				</div>
+				
+				<div class='regular_block'>
+					<h2>Your web presence is important</h2>
+					<p>Whether you need to maintain client information, to provide sales and service over the internet, or just to get the word about your business or organization out there, <b>quality matters</b>. I begin the design process by learning as much about you and your organization as possible - your core values, your workflow, your client base, your personality. Your web presence shouldn't be a generic template with your logo slapped on top. Your web presence should reflect you, your employees, and your clients.</p>
+					
+					<div class='button_list'>
+						<input class='samples' type='button' value='See my portfolio'/>
+						<input class='getintouch' type='button' value='Get in touch'/>
+					</div>
+				</div>
+				
+			</div>
+			<div class='white_bg' id='personal_intro'>
+                <div class='regular_block'>
+                    <h2>Who am I?</h2>
+                    <p>I'm a web developer living in Illinois with my wife, Mary, and our three dogs, Max, Lucky, and Sadie. We lead pretty busy lives, so we mostly enjoy any opportunity we can get to just stay home and watch a movie, write strange stories, or play board games. A lot of our weekends are spent on our snail's-pace home renovation.</p>
+                    <div class='img_scroll'>
+                        <img src='media/j&m2.jpg' alt='Jake and Mary Runge in Autumn' class='enlargeable'/>
+                        <img src='media/j&m_new.jpg' alt='Jake and Mary Runge' class='enlargeable'/>
+                        <img src='media/dogs_new.jpg' alt="Jake's dogs" class='enlargeable'/>
+                    </div>
+                    <p>Web development has provided me the opportunity to combine the activities I have enjoyed since childhood, from art to coding to writing. It has become something I love getting lost in&mdash;practical puzzles not just to be set aside when solved, but that always make me just a little better of a coder and a little more skillful of a designer; a little more efficient and a little more adventurous. I have discovered a passion for developing engaging, responsive, and accessible designs and interfaces, and for writing code that is useful, adaptable, and efficient.</p>
+                    <p>Like what you see? I'd love to hear from you! Get in touch with me <a href='#contact_me' class='getintouch'>here</a>.</p>
+                </div>
+            </div>
 		</div>
-		<div id='portfolio' class='main_screen'>
-			<div class='pad'>
-				<h1>Portfolio</h1>
-				<div id='portfolio_menu' class='submenu'>
-					<a href='#full_pages'>Webpages</a>
-					<a href='#code'>Code</a>
-					<a href='#graphics'>Graphics</a>
-				</div>
-				<div class='white_bg' id='full_pages'>
-					<div class='port_entry'>
-						<img class='top_img' src='portfolio/websites/portfolio.jpg'/>
-						<h2>Portfolio Site</h2>
-						<div class='site_info'>
-							<p class='site_nugget'><b>Website:</b> <a href='http://www.jacobrunge.com' target='_blank'>Jacob Runge - Portfolio</a></p>
-							<p class='site_nugget'><b>Created:</b> 2017</p>
-							<p class='site_nugget'>All code available on <a href='https://github.com/jwrunge/portfolio' target='_blank'>GitHub</a></p>
-							
-							<div class='expander lessinfo'>
-								<h3>Features</h3>
-								<ul>
-									<li>Single-page design</li>
-									<li>Dynamic content display based on URL hash</li>
-									<li>JavaScript History API used to define browser back/forward button behavior</li>
-									<li>One of five random video backgrounds loaded on the splash screen</li>
-									<li>Velocity.js and CSS3-based animations</li>
-								</ul>
-							</div>
-						</div>
-						
-						<a class='moreinfo_button'>+ More info +</a>
-					</div>
-					
-					<div class='port_entry'>
-						<img class='top_img' src='portfolio/websites/FUMC.jpg'/>
-						<h2>First United Methodist Church</h2>
-						<div class='site_info'>
-							<p class='site_nugget'><b>Website:</b> <a href='http://www.firstumcgalesburg.org' target='_blank'>First United Methodist Church [live site]</a></p>
-							<p class='site_nugget'><b>Created:</b> 2016 (currently maintained)</p>
-							
-							<div class='expander lessinfo'>
-								<h3>Features</h3>
-								<ul>
-									<li>Promotionally-based (a "digital poster")</li>
-									<li>Design based on FUMC mission statement</li>
-									<li>Mobile-first responsive</li>
-									<li>Content page loads data dynamically from SQL database</li>
-									<li>Custom CMS for church staff</li>
-								</ul>
-								<h3>Custom CMS includes:</h3>
-								<ul>
-									<li>User account creation</li>
-									<li>Permissions management</li>
-									<li>Rich-text page editing</li>
-									<li>Image management</li>
-									<li>AJAX page updates</li>
-								</ul>
-							</div>
-						</div>
-
-						<a class='moreinfo_button'>+ More info +</a>
-					</div>
-					
-					<div class='port_entry'>
-						<img class='top_img' src='portfolio/websites/cms.jpg'/>
-						<h2>Content Management Demo</h2>
-						<div class='site_info'>
-							<p class='site_nugget'><b>Website:</b> <a target='_blank'>CMS Demo</a> [currently unavailable]</p>
-							<p class='site_nugget'><b>Created:</b> 2016-2017</p>
-							
-							<div class='expander'>
-							<h3>About</h3>
-							<p>The CMS demo, as implemented on the First United Methodist Church website. Some features (like account creation and permissions management) unavailable. The demo will create a temporary account and allow the user to change content in the site database; however, those changes will only appear to that user for the duration of their session.</p>
-							</div>
-						</div>
-						
-						<a class='moreinfo_button'>+ More info +</a>
-					</div>
-					
-					<div class='port_entry'>
-						<img class='top_img' src='portfolio/websites/assorted.jpg'/>
-						<h2>Sample Designs</h2>
-						<div class='site_info'>
-							<p class='site_nugget'><b>Websites:</b> [coming soon]</p>
-							<p class='site_nugget'><b>Created:</b> 2016-2017</p>
-						</div>
-					</div>
-					
-					<div class='port_entry'>
-						<img class='top_img' src='portfolio/websites/FUMC_old.jpg'/>
-						<h2>First United Methodist Church (2013-2016)</h2>
-						<div class='site_info'>
-							<p class='site_nugget'><b>Website:</b> <a href='https://web.archive.org/web/20141217110954/http://firstumcgalesburg.org/' target='_blank'>First United Methodist (2013-2016)</a> [archived]</p>
-							<p class='site_nugget'><b>Created:</b> 2013-2014 (maintained through 2016)</p>
-							
-							<div class='expander'>
-								<h3>About</h3>
-								<p>First United Methodist's webpage was my first major webpage design project, started in 2013. In order to wrap my mind around the code already in place on the website, my goal was not to redesign, but to replicate what the original designer had created, and to build on it from there. The result was a page that had a similar appearance to the original designer's (archived <a href='https://web.archive.org/web/20110706181819/http://firstumcgalesburg.org' target='_blank'>here</a>), but that was built from scratch. Nearly all graphics were recreated (including the header image), and all code is original.</p>
-							</div>
-						</div>
-						
-						<a class='moreinfo_button'>+ More info +</a>
-					</div>
-					
-				</div><!--End website section-->
-				
-				<div class='white_bg' id='code'>
-				
-					<div class='port_entry'>
-						<h2>Code</h2>
-						<p>Most all code for the websites I have created is available online at <a href='https://github.com/jwrunge' target='_blank'>my GitHub page</a>. Stand-alone code (such as JQuery or Velocity plugins) is demoed below.</p>
-				
-						<h2>Screen Switch</h2>
-						<p>Using Velocity.js or JQuery animations. Allows dynamic switching of menu screens tied to submenu links. Full code and documentation available <a href='https://github.com/jwrunge/switchmenu' target='_blank'>on GitHub</a>.</p>
-						<iframe width="100%" height="300" src="//jsfiddle.net/jwrunge/4661n2qf/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-					
-						<h2>SVG Animator</h2>
-						<p>Auto animates SVG images with options for fine-grain control. Good for <a href='https://jsfiddle.net/jwrunge/bqrykL52/' target='_blank'>animating signatures</a>. Full code and documentation <a href='https://github.com/jwrunge/SVG-Path-Animator' target='_blank'>on GitHub</a>.</p>
-						<iframe width="100%" height="300" src="//jsfiddle.net/jwrunge/agywh09x/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-					
-						<h2>Form Validator</h2>
-						<p>Front- and back-end form validation. Full code and documentation <a href='https://github.com/jwrunge/Form-Validation' target='_blank'>on GitHub</a>. Example coming soon.</p>
-						
-						<p>Additional code demos coming soon.</p>
-					</div>
-				</div>
-			
-				<div class='white_bg' id='graphics'>
-					<div class='port_entry'>
-						<h2>Carl Sandburg College promotions</h2>
-					
-						<div class='site_info'>
-							<h3>Brochures</h3>
-							<p class='site_nugget'><b>Created:</b> 2017</p><br/>
-							<p>PDF brochures for the Tutoring Center and Disability Support Services. View the <a href='portfolio/graphics/TC_images/TC_brochure.pdf' target='_blank'> Tutoring Center</a> and <a href='portfolio/graphics/TC_images/DS_brochure.pdf' target='_blank'>Disability Support</a> brochures.</p>
-							
-							<div class='expander lessinfo'>
-								<p>I removed the background of the image of Mark Beckham tutoring to make the scene less crowded and the image more versatile. Removing the pink bag in the foreground required reconstructing part of Mark's hand, the desk, and several papers (comparison below).</p>
-								<div class='img_scroll'>
-									<img src='portfolio/graphics/TC_images/IMG_8236.jpg' class='enlargeable'/>
-									<img src='portfolio/graphics/TC_images/Mark_tutoring.png' class='enlargeable'/>
-								</div>
-							</div>
-						</div>
-						<a class='moreinfo_button'>+ More info +</a>
-						
-						<div class='site_info'>
-							<h3>Poster Ads</h3>
-							<p class='site_nugget'><b>Created:</b> 2017</p><br/>
-							<p>A series of parody advertisements for the Carl Sandburg College Tutoring Center, sized at 22"x28", featuring tutors in classic posters and pop culture advertisements.</p>
-							<div class='img_scroll'>
-								<img src='portfolio/graphics/TC_images/Missy2.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/TC_images/Mark2.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/TC_images/Mark_BigBang2.jpg' class='enlargeable'/>
-							</div>
-			
-							<div class='expander lessinfo'>
-								<p>Reference images were incorporated to varying degrees into the final posters. For the Rosie the Riveter poster, I took the full background image of the original and filled in gaps where necessary; the Uncle Sam poster incorporated some of the original text art; the <i>Big Bang Theory</i> poster background was replicated from scratch, with no actual elements taken directly from the original.</p>							
-								<div class='img_scroll'>
-									<img src='portfolio/graphics/TC_images/rosie-the-riveter-poster-s.jpg' class='enlargeable'/>
-									<img src='portfolio/graphics/TC_images/poster.jpg' class='enlargeable'/>
-									<img src='portfolio/graphics/TC_images/bbt.jpg' class='enlargeable'/>
-								</div>
-							</div>
-						</div>
-						<a class='moreinfo_button'>+ More info +</a>
-					</div>
-					
-					<div class='port_entry'>
-						<h2>Image Corrections</h2>
-						
-						<div class='site_info'>
-							<h3>Personal Images</h3>
-							<p class='site_nugget'><b>Created:</b> 2017</p><br/>
-							<p>Image of my wife and I, color-corrected and brightened. I removed my double-chin, fixed my teeth, and altered my eyes to make it appear as though I was looking at the camera.</p>
-							<div class='img_scroll'>
-								<img src='media/j&m.jpg' class='enlargeable'/>
-								<img src='media/j&m.png' class='enlargeable'/>
-							</div>
-						
-							<p>Image of my dogs. Corrected green tint and carpeted over the tattered transition to tile.</p>
-							<div class='img_scroll'>
-								<img src='media/dogs.jpg' class='enlargeable'/>
-								<img src='media/dogs.png' class='enlargeable'/>
-							</div>
-						</div>
-							
-					</div><!--end port_entry-->
-					
-					<div class='port_entry'>
-						<h2>Methodist Church Promotions</h2>
-						
-						<div class='site_info'>
-							<h3>"Just Us League" images</h3>
-							<p class='site_nugget'><b>Created:</b> 2017</p><br/>
-							<p>View "Just Us League" promo cards <a href='portfolio/graphics/JLCards/cards.pdf' target='_blank'>here</a>.</p>
-						
-							<div class='img_scroll'>
-								<img src='portfolio/graphics/JLCards/just_us_league_logo.png' class='enlargeable'/>
-								<img src='portfolio/graphics/JLCards/just_us_league_logo_black.png' class='enlargeable'/>
-								<img src='portfolio/graphics/JLCards/just_us_league_logo_hori.png' class='enlargeable'/>
-								<img src='portfolio/graphics/JLCards/just_us_league_logo_hori_black.png' class='enlargeable'/>
-							</div>
-						
-							<div class='expander lessinfo'>
-								<h3>Reference Image:</h3>
-								<p>The original "Justice League" logo, used as inspiration.</p>
-								<img src='portfolio/graphics/JLCards/justice-league-logo.jpg' class='enlargeable'/>
-							</div>
-						</div>
-						<a class='moreinfo_button'>+ More info +</a>
-										
-						<div class='site_info'>
-							<h3>Assorted Posters</h3>
-							<p class='site_nugget'><b>Created:</b> 2013-2015</p><br/>
-							<p>Images in these posters are not mine; text designs and layouts are.</p>
-						
-							<div class='img_scroll'>
-								<img src='portfolio/graphics/FUMC_Posters/Breakfast1.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/FUMC_Posters/GreenPotluck.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/FUMC_Posters/HealthyEating.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/FUMC_Posters/IceCreamFun.jpg' class='enlargeable'/>
-							</div>
-						</div>
-					
-						<div class='site_info'>
-							<h3>Crisis Care brochure</h3>
-							<p class='site_nugget'><b>Created:</b> 2014</p><br/>
-							<p>View the Crisis Care brochure <a href='portfolio/graphics/CC_Brochure/ccBrochure.pdf' target='_blank'>here</a>
-						</div>
-					
-						<div class='site_info'>
-							<h3>Methodist Church movie ads</h3>
-							<p class='site_nugget'><b>Created:</b> 2013-2014</p><br/>
-							<p>Posters created between 2013 and 2015 advertising Blockbuster Bible Study.</p>
-						
-							<div class='img_scroll'>
-								<img src='portfolio/graphics/FUMC_Movies/DayAfterTomorrow.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/FUMC_Movies/FlyAway.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/FUMC_Movies/MarchDinnerDelight.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/FUMC_Movies/MightyJoeYoung.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/FUMC_Movies/PrincessDiariesPoster.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/FUMC_Movies/SwingVote.jpg' class='enlargeable'/>
-								<img src='portfolio/graphics/FUMC_Movies/TheVillage.jpg' class='enlargeable'/>
-							</div>
-						</div>
-					</div><!--end port_entry-->
-				</div><!--end #graphics-->
-			</div><!--end .pad-->
-		</div><!--end #portfolio-->
 		
-		<div id='contact' class='main_screen'>
-			<div class='pad'>
-				<h1>Contact Me</h1>
-				<div class='submenu'></div>
-				<div class='white_bg' id='personal_intro'>
-					<h2>Need to get in touch?</h2>
-					<p>Feel free to email me at <a href='mailto:jwrunge@gmail.com'>jwrunge@gmail.com</a>.</p>
-					<h2>Want to see more?</h2>
-					<p>To see the code for most of my projects, check out <a href='https://github.com/jwrunge' target='_blank'>my GitHub page</a>.</p>
-					<p>Check out my JavaScript demos on <a href='https://jsfiddle.net/user/jwrunge/fiddles/' target='_blank'>my JSFiddle page</a>.</p>
-				</div>
-				
+		<?php include('modules/portfolio.php'); ?>
+
+		<div id='contact_me' class='main_screen'>
+			<h1>Contact Me</h1>
+			<div class='submenu'></div>
+			<div class='white_bg'>
+                <div class='regular_block'>
+                    <h2>Want to get in touch?</h2>
+                    <p><img src='media/gmail.png' class='contact_logo'/>Feel free to email me at <a href='mailto:jwrunge@gmail.com'>jwrunge@gmail.com</a>. I'm happy to answer any questions you may have, or just talk about web development.</p>
+                    <p>If you're interested in having your website or webapp (re)designed, please contact me via email. I would love the opportunity to discuss your project!</p>
+                    <h2>Want to see more?</h2>
+                    <p><img src='media/github.svg' class='contact_logo'/>To see the code for most of my projects, including full site designs, my JavaScript libraries and JQuery plugins, and PHP scripts, check out <a href='https://github.com/jwrunge' target='_blank'>my GitHub page</a>.</p>
+                    <p><img src='media/jsfiddle.png' class='contact_logo'/>For interactive JavaScript demos, check out <a href='https://jsfiddle.net/user/jwrunge/fiddles/' target='_blank'>my JSFiddle page</a>.</p>
+                </div>
 			</div>
 		</div>
-
+        
 	</div> <!--End 'content_body'-->
 	
-	<?php include('modules/footer.php'); ?>
+	<div id='footer'>
+		&copy; 2017, Jacob W. Runge &middot; <a href='mailto:jwrunge@gmail.com'>jwrunge@gmail.com</a> &middot; All Rights Reserved. &middot; <a href='attributions.html'>Attributions</a>
+	</div>
 </body>
 
 <script src="js/bigpicture.js"></script>
@@ -392,29 +154,39 @@
 	//References
 	var nav_bar = $('#nav_bar');
 	var pulldown = $('#nav_mouseover');
-	var mobile_threshold = 560;
+	var mobile_threshold = 1015;
 	
 	//Avoid loading video if on mobile
 	if($(window).width() <= mobile_threshold)
 		$('#bg').remove();
 	
+	//Disable nav_bar transitions to start
+	nav_bar.addClass('preload');
+	
+	//Initialize links to invisible
+	$('#top_links a').css('visibility', 'hidden');
+	
+	//Don't allow scrolling until after load
+	$('html').css('overflowY', 'hidden');
+	
+	//Get video element and pause it
+	var video = document.getElementById('bg');
+	//if(video) video.pause();	
+	
 	//Set up switch menus
-	var header_menu = new SwitchMenu('#nav_bar', ['#splash_screen', '#introduction', '#portfolio', '#contact'], {scrollTarget: 'body', startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
-	var intro_menu = new SwitchMenu('#introduction_menu', ['#personal_intro', '#resume'], {scrollTarget: 'screen', startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
-	var portfolio_menu = new SwitchMenu('#portfolio_menu', ['#full_pages', '#code', '#graphics'], {scrollTarget: 'screen', startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
+	var header_menu = new SwitchMenu('#nav_bar', ['#splash_screen', '#introduction', '#portfolio', '#contact_me'], {scrollTarget: 'body', scrollDuration: 0, startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
+	var intro_menu = new SwitchMenu('#introduction_menu', ['#web_design', '#personal_intro', '#contact_me'], {scrollTarget: 'screen', startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
+	var portfolio_menu = new SwitchMenu('#portfolio_menu', ['#full_pages', '#graphics'], {scrollTarget: 'screen', startFunc: function(){$('#content_body').css('height', $('#content_body').height());}, endFunc: function(){$('#content_body').css('height', '');}});
 	
+	//Resize function - changes nav bar height and screen margins
 	$(window).on('resize', function(){
-		if($(window).width() > mobile_threshold)
-			$('div.main_screen').css('margin-top', nav_bar.height() * 1.25 + 'px');
-		else
-			$('div.main_screen').css('margin-top', '.5em');
+        $('div.main_screen').css('margin-top', '30vh');
 	});
-	
-	$(window).resize();
 	
 	//Function for setting the current in-view screen when first opening the page
 	function initialize_screens()
-	{	
+	{		
+		//Make nav bar invisible if in mobile mode
 		if($(window).width() < mobile_threshold)
 		{
 			nav_bar.addClass('invisible');
@@ -424,14 +196,30 @@
 		//Set initial splash screen (or other screen) depending on URL
 		var hash = window.location.hash;
 
-		if(hash == '#introduction' || hash == '#portfolio' || hash == '#contact')
+		if(hash == '#introduction' || hash == '#portfolio' || hash == '#contact_me')
+		{
+            $('#nav_bar').prop('data-curScreen', hash);
 			set_state([hash, null, null]);
-		else if(hash == '#personal_intro' || hash == '#tools' || hash == '#resume')
+			$('#top_links a').css('visibility', 'visible');
+		}
+		else if(hash == '#web_design' || hash == '#personal_intro')
+		{
+            $('#nav_bar').prop('data-curScreen', '#introduction');
 			set_state(['#introduction', hash, null]);
+			$('#top_links a').css('visibility', 'visible');
+		}
 		else if(hash == '#full_pages' || hash == '#code' || hash == '#graphics')
+		{
+            $('#nav_bar').prop('data-curScreen', '#portfolio');
 			set_state(['#portfolio', null, hash]);
+			$('#top_links a').css('visibility', 'visible');
+		}
 		else
 		{
+            //Alter history (ensures current page status is logged)
+            history.pushState(['#splash_screen', null, null], null, null);
+            
+            //Handle nav_bar
 			if($(window).width() < mobile_threshold)
 			{
 				nav_bar.removeClass('invisible');
@@ -447,47 +235,35 @@
 			var bgimage = new Image;
 			bgimage.src = 'media/novideo_bg.jpg';
 			
-			//Ensure backgrounds are loaded
-			if($(window).width() >= mobile_threshold)
-			{
-				$('#bg').on('loadeddata', function() {
-					//Signature
-					var sig = new AniPath('#signature_svg', '.sigs');
-					sig.init();
-					sig.animate();
-				
-					$('#top_links a').css('visibility', 'hidden').velocity('transition.slideLeftIn', {delay:  5000, stagger: 250, visibility: 'visible', display: null});
-					
-					$('#nav_bar').css('visibility', 'visible');
-				});
-			}
-			else
-			{
-				$(bgimage).on('load', function() {
-					//Signature
-					var sig = new AniPath('#signature_svg', '.sigs');
-					sig.init();
-					sig.animate();
-				
-					$('#top_links a').css('visibility', 'hidden').velocity('transition.slideLeftIn', {delay:  5000, stagger: 250, visibility: 'visible', display: null});
-					
-					$('#nav_bar').css('visibility', 'visible');
-				});
-			}
+			//Signature
+			var sig = new AniPath('#signature_svg', '.sigs');
+			sig.init();
+			sig.animate();
+		
+			//Slide in the links
+			$('#top_links a').css('visibility', 'hidden').velocity('transition.slideLeftIn', {delay:  5000, stagger: 250, visibility: 'visible', display: null});
+			
+			//Ensure nav_bar is visible
+			$('#nav_bar').css('visibility', 'visible');
 		}
 		
-		//Alter history (ensures current page status is logged)
-		var pages = [];
-		$('.switch_menu').each(function()
-		{
-			pages.push($(this).prop('data-curScreen'));
-		});
-
-		history.pushState(pages, null, null);
+		//Open shutters
+		$('#left_shutter, #right_shutter, #setup_loading').addClass('open');
+		
+		if(video) video.play();
+		
+		//Re-enable scrolling
+		$('html').css('overflowY', 'auto');
+		
+		//Reinstate default nav_bar transitions
+		nav_bar.removeClass('preload');
 	};
 	
-	initialize_screens();
+	//Ensure everything is resized and loaded before animating
+	$(window).resize();
+	$(window).on('load', initialize_screens);
 	
+	//On hash change, alter navigation bar properties
 	$(window).on('hashchange', function(){
 		var hash = window.location.hash;
 		if(hash != '#splash_screen' && hash != '')
@@ -496,10 +272,12 @@
 			nav_bar.addClass('enlarged');
 	});
 			
+	//On link click, alter menu and nav bar properties
 	$('#top_links a').on('click', function(e) {
 		e.preventDefault();
 		e.stopPropagation();
 
+		//Shrink nav bar; switch for pulldown menu
 		nav_bar.removeClass('enlarged');
 		if($(window).width() <= mobile_threshold)
 		{
@@ -507,12 +285,14 @@
 			pulldown.removeClass('invisible');
 		}
 			
+		//Reset switch menus for submenus (on first link when switched back in)
 		if($('#introduction').css('display') == 'none')
 			intro_menu.reset();
 		else if($('#portfolio').css('display') == 'none')
 			portfolio_menu.reset();
 	});
 	
+	//If logo is clicked, re-enlarge it
 	$('#nav_logo').on('click', function(e) {
 		e.preventDefault();
 		e.stopPropagation();
@@ -521,6 +301,7 @@
 
 	});
 	
+	//Bind events on command
 	function bind_events()
 	{
 		$('a.moreinfo_button').off('click').on('click', function(e)
@@ -557,12 +338,7 @@
 		});
 	}
 	
-	bind_events();
-	
-	$(document).ready(function()
-	{
-		nav_bar.removeClass('preload');
-	});
+	bind_events();	//Initialize events
 	
 	$('.enlargeable').on('click', function() {
 		enlarge_img($(this).attr('src'));
@@ -606,6 +382,18 @@
 			pulldown.removeClass('invisible');
 		}
 	});
+    
+    $('.samples').on('click', function(e){
+       e.preventDefault;
+       e.stopPropagation;
+       set_state(['#portfolio',null,'#full_sites'], true);
+    });
+    
+    $('.getintouch').on('click', function(e){
+        e.preventDefault;
+        e.stopPropagation;
+        set_state(['#contact_me', null, null], true);
+    });
 		
 </script>
 

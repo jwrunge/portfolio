@@ -43,8 +43,9 @@ var SwitchMenu = function(menu_selector, screens, ops)
 	}
 	
 	//Reset menu
-	this.reset = function(only_if_hidden = false) //Only if hidden is a selector
+	this.reset = function(only_if_hidden) //Only if hidden is a selector
 	{
+                only_if_hidden = only_if_hidden || false;
 		if(only_if_hidden && $(only_if_hidden).css('display') != 'none') //Only reset if only_hidden is false (default) --> passing a selector allows for reset without affecting only_if_hidden
 			return;
 		
@@ -54,8 +55,10 @@ var SwitchMenu = function(menu_selector, screens, ops)
 	}
 	
 	//Switching animation
-	this.switchin = function(switch_in, switch_out, ops) //callback = null, track_order = null)
+	this.switchin = function(switch_in, switch_out, ops) //callback = null, track_order)
 	{
+                track_order = track_order || null;
+ 
 		var settings = {
 			callback: null,
 			track_order: null,
